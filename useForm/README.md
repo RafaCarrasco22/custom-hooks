@@ -2,7 +2,11 @@
 
 Ejemplo de uso: 
 ```
-const {counter, increment, decrement, reset} = useCounter(10);
+const initialForm = {
+    name: '',
+    edad: 1,
+    mail: ''
+    }
+const [formValues, handleInputChange, reset] = useForm( initialForm);
 
 ```
-useCounter() //recibe valor por defecto
